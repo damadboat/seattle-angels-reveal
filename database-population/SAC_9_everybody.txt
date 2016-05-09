@@ -1,0 +1,265 @@
+[EntrepreneurCard| Brian Bosche]
+
+[CompanyBriefCard| CompanyDetailedCard| Slope]
+
+[EntrepreneurHeading| Company]
+Slope
+CEO & Co-Founder
+
+[CompanyBriefHeading| EntrepreneurHeading| Contact ]
+brian@goslope.com
+<table>
+	<tr>		<td> <div style="font-weight:bold;"> Twitter: </div> 	</td>
+			<td> @goslope	</td>
+	</tr><tr>	<td>							</td>
+			<td> http://twitter.com/goslope </td>
+</tr></table>
+
+[CompanyBriefLogo| CompanyDetailedLogo| Logo]
+https://pbs.twimg.com/profile_images/543102473716514816/eZRwu7Gg.png
+
+[CompanyBriefBody| CompanyDetailedBody| Company Summary]
+
+"Content marketing is one of the best methods for businesses to generate leads and close sales. Businesses are producing more and more content to meet customer demand, but don't have the infrastructure to efficiently produce content. It's Slope's mission to provide a solution that allows businesses to easily work with their team to create and manage their media content.
+
+Slope is a cloud platform for collecting, storing, accessing, and collaborating on professional media content. By using this platform, businesses can save time and money through more efficient workflow on their marketing initiatives.
+Slope is the smartest way for marketing teams to collaborate on visual content. Businesses are producing more visual content than ever before, but still lack the tools to make it efficient. Slope allows teams to plan, collaborate, and manage campaigns, streamlining the entire process. We also provide teams with meaningful data to help them improve their process, and better correlate the effort of creating content with its effectiveness in the market. 
+"
+
+[CompanyDetailedHeading| Location ]
+
+WA, USA
+
+[ CompanyBriefHeading| Web ]
+
+http://goslope.com
+
+[ CompanyDetailedHeading| Web ]
+
+http://goslope.com
+https://gust.com/companies/slope
+https://angel.co/slope
+https://www.crunchbase.com/organization/slope#/entity
+
+[EntrepreneurCard| Ron Epperson]
+
+[CompanyBriefCard| CompanyDetailedCard| Crystal Clear Technologies Inc]
+
+[EntrepreneurHeading| Company]
+
+Crystal Clear Technologies Inc.
+President & CEO
+
+[CompanyBriefHeading| EntrepreneurHeading| Contact ]
+
+ronepperson@intellectualenergy.net
+713-256-9257
+<table>
+	<tr>		<td> <div style="font-weight:bold;"> Twitter: </div> 	</td>
+			<td> @crystalcleartec </td>
+	</tr><tr>	<td>							</td>
+			<td> https://twitter.com/crystalcleartec</td>
+</tr></table>
+
+[CompanyBriefLogo| CompanyDetailedLogo| Logo]
+
+https://pbs.twimg.com/profile_images/2603238272/xeendaufbjzhxg3xkf8m.jpeg
+
+[CompanyBriefBody| CompanyDetailedBody| Company Summary]
+
+"A Woman-Owned Small Business designed to support the mission critical requirements of the DoD.
+ Crystal Clear Technologies provides its clients with strategic advice and the integration of cutting edge technologies. Our three lines of business can work independently or together to tackle multifaceted missions that require product, design, installation, and sustainment.
+ Our Strategic Products Sourcing team is dedicated to supplying information technology products via our worldwide distribution and logistics network.
+ Our Integrated Solutions team designs and constructs comprehensive solutions for cable plant infrastructure, audio visual integration, and security systems. In addition, CCT specializes in identifying emerging technologies to fulfill unique customer requirements.
+ Our Enterprise Services business provides cost effective and skilled expertise to meet mission critical requirements for: Cyber Security and Information Assurance, IT Enterprise Network Management, C4I Systems, and Audio/Visual and IT Infrastructure support.
+ CCTs pledge to our clients is to strive each day to understand needs and to flawlessly execute their implementation.
+
+"
+
+[CompanyDetailedHeading| Location ]
+
+6910 SW Corbett Avenue	Portland OR 97219 USA
+
+[ CompanyBriefHeading| Web ]
+
+https://www.crystalcleartec.com/
+
+[ CompanyDetailedHeading| Web ]
+
+https://www.crystalcleartec.com/	
+https://gust.com/companies/crystal-clear-technologies-inc
+
+[EntrepreneurCard| Mark Merrill]
+
+[CompanyBriefCard| CompanyDetailedCard| Aquarium]
+
+[EntrepreneurHeading| Company]
+
+Aquarium
+COO
+
+[CompanyBriefHeading| EntrepreneurHeading| Contact ]
+
+merrill@aquarium.bio
+917-767-4678
+
+[CompanyBriefLogo| CompanyDetailedLogo| Logo]
+
+https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAUnAAAAJDM1NzYzOTEyLTU3NjAtNGE5Zi1hODllLTdkYjQyN2YxZDc2MQ.png
+
+[CompanyBriefBody| CompanyDetailedBody| Company Summary]
+
+"Aquarium allows you to build reproducible, scalable, and transferable experimental workflows integrated with sample tracking, data collection, laboratory activity and supply chain management. 
+The Aquarium Operating System(TM) (Aquarium OS (TM)), a comprehensive cloud-based laboratory operating system that is designed to enable biotechnology researchers to quickly and easily develop, execute, and share highly reproducible experimental workflows;
+
+Aquarium Analytics (TM), which leverages data generated within the Aquarium OS(TM) to provide users with highly accurate predictions of workflow outcomes, including time to completion, cost of necessary inputs, and probability of success; and
+
+The Aquarium Exchange (TM), a community-focused marketplace in which workflows and protocols developed within the Aquarium OS(TM) can be shared among Aquarium users.
+"
+
+[CompanyDetailedHeading| Location ]
+
+c/o CoMotion Incubator, Fluke Hall	
+4000 Mason Road	
+Seattle, WA	
+98195
+USA
+
+[ CompanyBriefHeading| Web ]
+
+http://www.aquarium.bio
+
+[ CompanyDetailedHeading| Web ]
+
+http://www.aquarium.bio	
+https://gust.com/companies/aquarium	
+https://angel.co/aquarium
+
+[EntrepreneurCard| Vishal Joshi ]
+
+[CompanyBriefCard| CompanyDetailedCard| Joy Life Inc]
+
+[EntrepreneurHeading| Company]
+
+Joy Life, Inc.
+Co-Founder & CEO
+
+[CompanyBriefHeading| EntrepreneurHeading| Contact ]
+
+vishal@withjoy.com
+42523327-4-9
+
+[CompanyBriefLogo| CompanyDetailedLogo| Logo]
+
+https://pbs.twimg.com/profile_images/621513992188506112/kQoyp0Ko.jpg
+
+[CompanyBriefBody| CompanyDetailedBody| Company Summary]
+
+"Joy is a free, easy-to-use home for your wedding. Manage guests, RSVPs, and more--all in one place. And most importantly, capture the joy of your special day and showcase it for generations. It is an intelligent wedding assistant that leverages AI to guide the millennial couple & their guests through every step of the wedding journey and it bring family & friends closer together. 
+Professional photographers take beautiful photos of key parts of the wedding. But you don't want to miss the candid shots, like selfies on the dance floor! Joy lets all of your guests share the photos they capture on your private timeline, so you can see your wedding day from their perspective. 
+Joy offers a real, live place for your guests to share their love and well-wishes. Post messages directly to your moments timeline or attach them to photos. Send the author some love by commenting or tapping the 'heart' on any photo.
+
+"
+
+[CompanyDetailedHeading| Location ]
+
+623 Aloha Street		
+Seattle, WA	
+98109	
+USA
+
+[ CompanyBriefHeading| Web ]
+
+http://withjoy.com
+
+[ CompanyDetailedHeading| Web ]
+
+http://withjoy.com	
+https://gust.com/companies/withjoy
+
+[EntrepreneurCard| Allison Magyar ]
+
+[CompanyBriefCard| CompanyDetailedCard| Hubb]
+
+[EntrepreneurHeading| Company]
+
+Hubb
+
+[CompanyBriefHeading| EntrepreneurHeading| Contact ]
+
+allie@hubb.me
+<table>
+	<tr>		<td> <div style="font-weight:bold;"> Twitter: </div> 	</td>
+			<td> @alliemagyar					</td>
+	</tr><tr>	<td>							</td>
+			<td> http://twitter.com/alliemagyar			</td>
+</tr></table>
+
+[CompanyBriefLogo| CompanyDetailedLogo| Logo]
+
+https://pbs.twimg.com/profile_images/663835765332291584/NdmwZMN7.jpg
+
+[CompanyBriefBody| CompanyDetailedBody| Company Summary]
+
+"Hubb is a Software as a Service platform that automates the business process for collecting, managing and marketing the abstracts, speakers and sponsors for conferences and meetings.
+It simplifies the process for selecting, managing, and marketing event content so meeting planners save time. From your call for papers to your very last attendee survey, Hubb enables your planning team, selection committee members, track owners, speakers & sponsors to all collaborate on your conference content on our web-based platform. 
+We make it easy for speakers and sponsors to upload and manage their own content. Hubb's grading portal makes it simple for your selection committee to score and select the best content anytime, anywhere. Your planning team and track owners will love how fast and easy it is to manage their sessions. 
+Want to market your content to attendees? We make that a snap as well.  Hubb, for meeting planners, by meeting planners.
+"
+
+[CompanyDetailedHeading| Location ]
+
+WA, USA
+
+[ CompanyBriefHeading| Web ]
+
+http://www.hubb.me
+
+[ CompanyDetailedHeading| Web ]
+
+http://www.hubb.me	
+https://gust.com/companies/hubbdotme		
+https://www.crunchbase.com/organization/hubb#/entity
+
+[EntrepreneurCard| Evan Hiner ]
+
+[CompanyBriefCard| CompanyDetailedCard| Learning Suite]
+
+[EntrepreneurHeading| Company]
+
+Learning Suite
+
+[CompanyBriefHeading| EntrepreneurHeading| Contact ]
+
+evanhiner@gmail.com
+
+[CompanyBriefLogo| CompanyDetailedLogo| Logo]
+
+https://d1qb2nb5cznatu.cloudfront.net/startups/i/850685-fbb1cd9f8ca1111fa93d1d1f89dd25ca-medium_jpg.jpg?buster=1448233673
+
+[CompanyBriefBody| CompanyDetailedBody| Company Summary]
+
+"CPEsuite is the best way for licensed professionals to manage and make the most of their required continuing education.
+CPEsuite is the first platform created specifically to streamline the end-to-end process of managing & completing Continuing Professional Education (CPE). Our product combines a compliance tracking tool for individuals & firms, a peer-to-peer course marketplace, & an online learning platform for a firm's in-house training. We eliminate wasted administrative costs & allow professionals to efficiently & effectively maximize the value of their CPE.
+CPE Suite entire ethos revolves around making CPE more convenient, more flexible, and more valuable. We aim to do this by providing: 
+*	An easy way for any professional to teach CPE and earn money. 
+*	High-quality, diverse, & valuable courses that facilitates growth. 
+*	Mobile-friendly technology and a great experience. 
+*	Time savings with short course modules. 
+*	Multiple learning formats to best suit your learning styles. 
+*	Improved industry knowledge sharing & learning community.
+
+"
+
+[ CompanyBriefHeading| Web ]
+
+https://cpesuite.com/
+
+[ CompanyDetailedHeading| Web ]
+
+https://cpesuite.com/	
+https://gust.com/companies/learning-suite-inc	
+https://angel.co/learning-suite	
+https://www.crunchbase.com/organization/learning-suite-inc#/entity
+
+
