@@ -1,0 +1,9 @@
+{
+  "firebase": "seattle-angels",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
