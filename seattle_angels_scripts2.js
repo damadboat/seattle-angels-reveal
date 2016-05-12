@@ -9,13 +9,6 @@ function plainTextToHtml(toConvert)
 		calcS = calcS.replace("\n","</div><div>");
 	return "<div>" + calcS + "</div>"
 }
-
-function initialize()
-{
-	document.body.innerHTML = loadPage("display_window.html");
-	//JET do I need to be listening for other event types? I want to know if _anything_ changes. Do I need to be listening to each event individually?
-	myFirebaseRef.child("/").on("value", createRevealPagesHTML); 
-}
 /*
 function createRevealBodyPageHTML(type, cardData, cardAddress)
 {
