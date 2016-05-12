@@ -16,7 +16,7 @@ function initialize()
 	//JET do I need to be listening for other event types? I want to know if _anything_ changes. Do I need to be listening to each event individually?
 	myFirebaseRef.child("/").on("value", createRevealPagesHTML); 
 }
-
+/*
 function createRevealBodyPageHTML(type, cardData, cardAddress)
 {
 	var calcS;			
@@ -48,15 +48,113 @@ function createRevealBodyPageHTML(type, cardData, cardAddress)
 				break;
 	}	}	}
 	return prefixHTML + summaryHTML + bodyHTML + suffixHTML;
-	
 }
+*/
+function createRevealPagesHTML(databaseReply)
+{
+	var cardset;
+	var entryNumber;
+	var newHTML = "";
+	for (presentedCardIndex in databaseReply.val()['SAC_9_2']['Presentation'])
+	{
+		var presentedCard = databaseReply.val()['SAC_9_2']['Presentation'][presentedCardIndex]
+		if (!(presentedCard in databaseReply.val()['SAC_9_2']['Templates']))
+			throw "Error: Unrecognized template type " + presentedCard + "!"
+		var cardHTMLTemplate = 	databaseReply.val()['SAC_9_2']['Templates'][presentedCard]
+		var cardHTMLTemplateIdx;
+
+		while (true)
+		{
+			cardHTMLTemplateIdx = cardHTMLTemplate.indexOf('$$') //double $$ indicates the start of a template expression 
+			if (cardHTMLTemplateIdx == -1)
+			{
+				newHTML += cardHTMLTemplate.slice(0, cardHTMLTemplate.length);
+				break;
+			}
+			newHTML += cardHTMLTemplate.slice(0, cardHTMLTemplateIdx);
+			cardHTMLTemplate = cardHTMLTemplate.slice(cardHTMLTemplateIdx + 2, cardHTMLTemplate.length)
+			//locate closing paren to isolate "AllMatchingPattern" block
+			cardHTMLTemplateIdx = 0
+			var parensDeep = 0
+			var doubleDollarOpenParens = -1
+			do
+			{
+				console.log("[" + cardHTMLTemplate.slice(cardHTMLTemplateIdx, cardHTMLTemplate.length) + "]")
+				switch (cardHTMLTemplate[cardHTMLTemplateIdx])
+				{
+					case '(' : 			if (doubleDollarOpenParens == -1) doubleDollarOpenParens = cardHTMLTemplateIdx;
+										parensDeep = parensDeep + 1; break;
+					case ')' :			if (parensDeep < 0)		throw "Error! Mismatched parens in template HTML";
+										parensDeep = parensDeep  -1; break;
+					case undefined :	throw "Error! Mismatched parens in $$ template invocation!"
+				}
+				
+				cardHTMLTemplateIdx += 1
+			}	while ((parensDeep > 0) || (doubleDollarOpenParens == -1));
+		
+			var cardIndex
+			for (cardIndex in databaseReply.val()['SAC_9_2']['Cards'])
+			{
+				var aCard  = databaseReply.val()['SAC_9_2']['Cards'][cardIndex]
+				var functionBlock = cardHTMLTemplate.slice(doubleDollarOpenParens, cardHTMLTemplateIdx)
+				while (true)
+				{
+					var calc2  = functionBlock.slice(0, functionBlock.length).indexOf('$')
+					if (calc2 == -1)
+						break;
+					var calcS2  = functionBlock.slice(calc2, functionBlock.length)
+					var  leftBraceIdx = calcS2.indexOf('{')
+					var rightBraceIdx = calcS2.indexOf('}')
+					if ((leftBraceIdx == -1) || (rightBraceIdx == -1))
+						throw "Error! Curly brace mismatch in template HTML"
+					var fieldFromDatabase = calcS2.slice(leftBraceIdx + 1, rightBraceIdx)
+					
+					if (! (fieldFromDatabase in aCard))
+					{
+						functionBlock = functionBlock.slice(0, 							calc2) 					+ "undefined" + 
+										functionBlock.slice(calc2 + rightBraceIdx + 1, 	functionBlock.length);
+						continue;
+					}
+					else
+					{
+						var calcS3 = "";
+						switch (typeof aCard[fieldFromDatabase])
+						{
+							case "string": calcS3 = "\"" + aCard[fieldFromDatabase] + "\"" ; break;
+							case "number": calcS3 =        aCard[fieldFromDatabase];		 break;
+							default:	   throw "Error! " + fieldFromDatabase + " is of unexpected  type " + typeof aCard[fieldFromDatabase] + " in database."
+						}
+						functionBlock = functionBlock.slice(0, 							calc2) 					+ calcS3 + 
+										functionBlock.slice(calc2 + rightBraceIdx + 1, 	functionBlock.length);
+				}	}
+				var calc4 = functionBlock.indexOf(',')
+				var matchExpression = functionBlock.slice(1, 			calc4);
+				var templatedHTML   = functionBlock.slice(calc4 + 1, 	functionBlock.length - 1);
+				console.log(templatedHTML)
+				if (eval(matchExpression))
+					newHTML += templatedHTML
+			}	
+			cardHTMLTemplate = cardHTMLTemplate.slice(cardHTMLTemplateIdx, cardHTMLTemplate.length)
+	}	}
+	document.getElementById('revealSlidesSection').innerHTML = newHTML;
+	Reveal.initialize({
+		history: true,
+		dependencies: [
+			{ src: 'plugin/markdown/marked.js' },
+			{ src: 'plugin/markdown/markdown.js' },
+			{ src: 'plugin/notes/notes.js', async: true },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+		]
+	});
+}
+
+/*
 function createRevealPagesHTML(databaseReply)
 {
 	var cardset;
 	var entryNumber;
 	var newHTML = "";
 	for (cardsetIndex in databaseReply.val()['SAC_9_1']['cardsetOrder'])
-	{
 		var cardsetName = databaseReply.val()['SAC_9_1']['cardsetOrder'][cardsetIndex]
 		if (cardsetName in databaseReply.val()['SAC_9_1'])
 		{
@@ -106,7 +204,6 @@ function createRevealPagesHTML(databaseReply)
 			//console.log(bodyHTML)
 	}	}
 	
-	
 	document.getElementById('revealSlidesSection').innerHTML = newHTML;
 
 	Reveal.initialize({
@@ -120,6 +217,7 @@ function createRevealPagesHTML(databaseReply)
 			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 		]
 	});
+*/	
 
 
 //	<div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px);">  			Welcome 			 				Welcome letter goes here.  		</div>
@@ -159,8 +257,9 @@ function createRevealPagesHTML(databaseReply)
 	
 	//document.getElementById('revealSlidesSection').style = document.getElementById('revealSlidesSection').style
 //	forceRedraw(document.getElementById('revealSlidesSection'))
-	*/
+	
 }
+*/
 
 function initialize()
 {
